@@ -28,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/rthomson412/MVC-techblog/issues"
   },
-  "homepage": "https://github.com/rthomson412/MVC-techblog#readme"
+  "homepage": "https://github.com/rthomson412/MVC-techblog#readme",
+  "devDependencies": {}
 }
