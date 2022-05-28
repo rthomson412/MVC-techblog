@@ -109,15 +109,15 @@
   }
   
   .save-post-btn {
-    background-color: #198600;
+    background-color: #a3ff8e;
   }
   
   .delete-post-btn {
-    background-color: #d82b2b;
+    background-color: #ff7c7c;
   }
   
   .delete-post-btn:hover {
-    background-color: #a52100;
+    background-color: #eb461c;
   }
   
   .post {
