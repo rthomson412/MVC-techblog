@@ -117,8 +117,10 @@ router.put('/:id', withAuth, (req, res) => {
 
   router.delete('/:id', withAuth, (req, res) => {
     Post.destroy({
+      include: [Comment],
       where: {
-        id: req.params.id
+        id: req.params.id,
+
       }
     })
       .then(dbPostData => {
