@@ -8,6 +8,7 @@
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
     "sequelize": "^6.20.1"
   },
   "scripts": {
@@ -28,6 +29,5 @@
   "bugs": {
     "url": "https://github.com/rthomson412/MVC-techblog/issues"
   },
-  "homepage": "https://github.com/rthomson412/MVC-techblog#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/rthomson412/MVC-techblog#readme"
 }
