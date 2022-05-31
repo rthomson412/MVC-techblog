@@ -72,7 +72,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
     .then(dbPostData => {
       // if no post by that id exists, return an error
       if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id' });
+        res.status(404).json({ message: 'No post at this id' });
         return;
       }
       // serialize data before passing to template
@@ -85,11 +85,29 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
-// route to create/add a new post by author
+router.delete('/:id', withAuth, (req, res) => {
+  Comment.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbCommentData => {
+        if (!dbCommentData) {
+          res.status(404).json({ message: 'No comment at this id.' });
+          return;
+        }
+        res.json(dbCommentData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+});
+
 router.get('/new', withAuth, (req, res) => {
   Post.findAll({
     where: {
-      // use the ID from the session
+ 
       user_id: req.session.user_id
     },
     attributes: [
@@ -119,7 +137,7 @@ router.get('/new', withAuth, (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err);
+      res.status(500).json(err);s
     });
 });
 
