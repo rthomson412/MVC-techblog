@@ -20,4 +20,5 @@ const seedAll = async () => {
 };
 
 seedAll();
+
 // heroku run node <path to seed file>

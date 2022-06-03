@@ -19,7 +19,7 @@ Comment.belongsTo(User, {
 });
 
 // Comment-Post relationship
-// User-Comment relationsihp
+// User-Comment relationsihpy
 
 // Post-Comment relationship
 Post.hasMany(Comment, {
