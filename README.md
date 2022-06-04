@@ -1,7 +1,7 @@
 ### THE TECH BLOG
 
 ## Description
-A simple tech blog which that employs the MVC architectural structure with handlebars and sequelize to allow developers to publish and delete articles, create accounts and make comments. 
+A simple tech blog that employs the MVC architectural structure with handlebars and sequelize to allow developers to publish and delete articles, create accounts and make comments. 
 
 ## Installation
 You can `git clone` the repo to your local machine and the run `npm install` to acquire the relevant dependencies.
