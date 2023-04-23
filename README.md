@@ -1,4 +1,4 @@
-### THE TECH BLOG
+### THE TECH BLOG .
 
 ## Description
 A simple tech blog that employs the MVC architectural structure with handlebars and sequelize to allow developers to publish and delete articles, create accounts and make comments. 
