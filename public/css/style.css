@@ -23,7 +23,7 @@
     border: 0;
     padding: 1%;
     font-weight: bold;
-    transition: background-color .1s;
+    transition: background-color .2s;
     cursor: pointer;
     border-radius: 5px;
   }
